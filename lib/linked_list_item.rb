@@ -24,4 +24,6 @@ class LinkedListItem
       return self.payload <=> other.payload
     end
 
+  end
+
 end
