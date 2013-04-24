@@ -71,7 +71,7 @@ class LinkedList
   def remove(n)
   end
 
-  # ========= Bonus ========== #
+  # ========= Index Exercise ========== #
 
   def indexOf(payload)
     index = 0
@@ -81,6 +81,18 @@ class LinkedList
       return index if get(index) == payload
       index += 1
     end 
+  end
+  
+  # ========= Sorting Exercise ========== #
+
+  def sorted?
+  end
+
+  def sort
+  end
+
+  # This is a helper I implemented
+  def swap_with_next i
   end
 
 

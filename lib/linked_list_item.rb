@@ -15,4 +15,13 @@ class LinkedListItem
     @next_list_item.nil?
   end
 
+  def <=> other
+    # Comparators return -1, 0, or 1 to indicate > , ==, or <
+    # Precedence: integers, then strings, then symbols (each sorted
+    # individually)
+    if self.payload.class == other.payload.class
+      # I implemented this basic comparison for you.
+      return self.payload <=> other.payload
+    end
+
 end
