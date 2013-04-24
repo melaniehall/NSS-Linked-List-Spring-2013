@@ -71,4 +71,17 @@ class LinkedList
   def remove(n)
   end
 
+  # ========= Bonus ========== #
+
+  def indexOf(payload)
+    index = 0
+    size = self.size
+
+    until index == size
+      return index if get(index) == payload
+      index += 1
+    end 
+  end
+
+
 end
